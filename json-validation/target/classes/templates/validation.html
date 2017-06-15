@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Json Validator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<h2>Json Validator</h2>
+    <form action="#" th:action="@{/validation}" th:object="${validation}" method="post">
+        <p>Paste Json: <input type="text" th:field="*{content}" /></p>
+        <p><input type="submit" value="Submit" /></p>
+    </form>
+    <div id="#valid" th:if="!${validation.valid}">Not Valid!</div>
+    
+    
+    
+</body>
+</html>

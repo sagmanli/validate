@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Json Validator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="jquery-3.2.1.min.js"></script>
+	<script src="json-view.min.js"></script>
+	<script src="makeTree.js"></script>
+	<link href="jquery.json-view.min.css" rel="stylesheet"></link>
+</head>
+<body>
+	<h2>Verified Json</h2>
+    <p id="tree" th:text="${validation.treeRep}" />
+    <a href="/validation">New Json</a>
+        
+</body>
+</html>
